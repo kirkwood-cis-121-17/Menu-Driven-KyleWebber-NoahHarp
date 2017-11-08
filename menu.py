@@ -26,28 +26,48 @@ def display_menu():
     print("6) Quit")
     
 def hand_average(AVERAGE):
-    given_range = str(input("Enter the desired string of numbers, with commas in between them. (Example - 1,2,3,4): "))
+    given_range = int(input("Enter the first number: "))
+    given_range_0 = int(input("Enter the second number: "))
+    given_range_1 = int(input("Enter the third number: "))
+    given_range_2 = int(input("Enter the fourth number: "))
+    given_range_3 = int(input("Enter the fifth number: "))
     import statistics
-    print(statistics.mean([given_range]))
+    print(statistics.mean([given_range,given_range_0,given_range_1,given_range_2,given_range_3]))
     
 def hand_median(MEDIAN):
-    given_range1 = int(input("Enter the desired string of numbers, with commas in between them. (Example - 1,2,3,4): "))
+    given_range1 = int(input("Enter the first number: "))
+    given_range1_0 = int(input("Enter the second number: "))
+    given_range1_1 = int(input("Enter the third number: "))
+    given_range1_2 = int(input("Enter the fourth number: "))
+    given_range1_3 = int(input("Enter the fifth number: "))
     import statistics
-    print(statistics.median([given_range1]))
+    print(statistics.median([given_range1,given_range1_0,given_range1_1,given_range1_2,given_range1_3]))
     
 def hand_mode(MODE):
-    given_range2 = int(input("Enter the desired string of numbers, with commas in between them. (Example - 1,2,3,4): "))
+    given_range2 = int(input("Enter the first number: "))
+    given_range2_0 = int(input("Enter the second number: "))
+    given_range2_1 = int(input("Enter the third number: "))
+    given_range2_2 = int(input("Enter the fourth number: "))
+    given_range2_3 = int(input("Enter the fifth number: "))
     import statistics
-    print(statistics.mode([given_range2]))
+    print(statistics.mode([given_range2,given_range2_0,given_range2_1,given_range2_2,given_range2_3]))
     
 def hand_minimum(MINIMUM):
-    given_range3 = int(input("Enter the desired string of numbers, with commas in between them. (Example - 1,2,3,4): "))
-    minimum_value = min(given_range3)
+    given_range3 = int(input("Enter the first number: "))
+    given_range3_0 = int(input("Enter the second number: "))
+    given_range3_1 = int(input("Enter the third number: "))
+    given_range3_2 = int(input("Enter the fourth number: "))
+    given_range3_3 = int(input("Enter the fifth number: "))
+    minimum_value = min(given_range3,given_range3_0,given_range3_1,given_range3_2,given_range3_3)
     print(minimum_value)
     
 def hand_maximum(MAXIMUM):
-    given_range4 = int(input("Enter the desired string of numbers, with commas in between them. (Example - 1,2,3,4): "))
-    maximum_value = max(given_range4)
+    given_range4 = int(input("Enter the first number: "))
+    given_range4_0 = int(input("Enter the second number: "))
+    given_range4_1 = int(input("Enter the third number: "))
+    given_range4_2 = int(input("Enter the fourth number: "))
+    given_range4_3 = int(input("Enter the fifth number: "))
+    maximum_value = max(given_range4,given_range4_0,given_range4_1,given_range4_2,given_range4_3)
     print(maximum_value)
 
 def handle_choice(choice):
