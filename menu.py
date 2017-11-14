@@ -5,14 +5,20 @@ MINIMUM = 4
 MAXIMUM = 5
 QUIT = 6
 
-
+print("This Program takes a set of five or fewer numbers and gives you an Average, Median, Mode, Min, or Max.")
+Given_Range_1 = int(input("Enter the first number: "))
+Given_Range_2 = int(input("Enter the second number: "))
+Given_Range_3 = int(input("Enter the third number: "))
+Given_Range_4 = int(input("Enter the fourth number: "))
+Given_Range_5 = int(input("Enter the fifth number: "))
+        
 def main():
     
     choice = 0
-    
+   
     while choice != QUIT:
         display_menu()
-        choice = int(input("Enter your D E S I R E D choice: "))
+        choice = int(input("Enter your desired choice: "))
         output = handle_choice(choice)
         print(output)
         
@@ -26,48 +32,28 @@ def display_menu():
     print("6) Quit")
     
 def hand_average(AVERAGE):
-    given_range = int(input("Enter the first number: "))
-    given_range_0 = int(input("Enter the second number: "))
-    given_range_1 = int(input("Enter the third number: "))
-    given_range_2 = int(input("Enter the fourth number: "))
-    given_range_3 = int(input("Enter the fifth number: "))
+    
     import statistics
-    print(statistics.mean([given_range,given_range_0,given_range_1,given_range_2,given_range_3]))
+    print(statistics.mean([Given_Range_1,Given_Range_2,Given_Range_3,Given_Range_4,Given_Range_5]))
     
 def hand_median(MEDIAN):
-    given_range1 = int(input("Enter the first number: "))
-    given_range1_0 = int(input("Enter the second number: "))
-    given_range1_1 = int(input("Enter the third number: "))
-    given_range1_2 = int(input("Enter the fourth number: "))
-    given_range1_3 = int(input("Enter the fifth number: "))
+    
     import statistics
-    print(statistics.median([given_range1,given_range1_0,given_range1_1,given_range1_2,given_range1_3]))
+    print(statistics.median([Given_Range_1,Given_Range_2,Given_Range_3,Given_Range_4,Given_Range_5]))
     
 def hand_mode(MODE):
-    given_range2 = int(input("Enter the first number: "))
-    given_range2_0 = int(input("Enter the second number: "))
-    given_range2_1 = int(input("Enter the third number: "))
-    given_range2_2 = int(input("Enter the fourth number: "))
-    given_range2_3 = int(input("Enter the fifth number: "))
+    
     import statistics
-    print(statistics.mode([given_range2,given_range2_0,given_range2_1,given_range2_2,given_range2_3]))
+    print(statistics.mode([Given_Range_1,Given_Range_2,Given_Range_3,Given_Range_4,Given_Range_5]))
     
 def hand_minimum(MINIMUM):
-    given_range3 = int(input("Enter the first number: "))
-    given_range3_0 = int(input("Enter the second number: "))
-    given_range3_1 = int(input("Enter the third number: "))
-    given_range3_2 = int(input("Enter the fourth number: "))
-    given_range3_3 = int(input("Enter the fifth number: "))
-    minimum_value = min(given_range3,given_range3_0,given_range3_1,given_range3_2,given_range3_3)
+   
+    minimum_value = min(Given_Range_1,Given_Range_2,Given_Range_3,Given_Range_4,Given_Range_5)
     print(minimum_value)
     
 def hand_maximum(MAXIMUM):
-    given_range4 = int(input("Enter the first number: "))
-    given_range4_0 = int(input("Enter the second number: "))
-    given_range4_1 = int(input("Enter the third number: "))
-    given_range4_2 = int(input("Enter the fourth number: "))
-    given_range4_3 = int(input("Enter the fifth number: "))
-    maximum_value = max(given_range4,given_range4_0,given_range4_1,given_range4_2,given_range4_3)
+    
+    maximum_value = max(Given_Range_1,Given_Range_2,Given_Range_3,Given_Range_4,Given_Range_5)
     print(maximum_value)
 
 def handle_choice(choice):
