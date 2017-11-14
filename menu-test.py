@@ -18,7 +18,7 @@ def main():
    
     while choice != QUIT:
         display_menu()
-        choice = int(input("Enter your D E S I R E D choice: "))
+        choice = int(input("Enter your desired choice: "))
         output = handle_choice(choice)
         print(output)
         
