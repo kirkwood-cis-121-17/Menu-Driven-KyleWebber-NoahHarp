@@ -20,7 +20,6 @@ def main():
         display_menu()
         choice = int(input("Enter your desired choice: "))
         output = handle_choice(choice)
-        print(output)
         
 def display_menu():
     print("MENU")
